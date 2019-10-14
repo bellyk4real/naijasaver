@@ -1,4 +1,5 @@
 from flask import Blueprint
+from naijasaver.blueprints.user.models import User
 
 user = Blueprint('user', __name__)
 
