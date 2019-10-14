@@ -1,7 +1,11 @@
 from flask import Blueprint
 
-user = Blueprint('user', __name__, template_folder='templates')
+user = Blueprint('user', __name__)
 
 @user.route('/')
 def home():
-    return 'Naijasaver saves you cash'
+    return {"message" : 'Naijasaver saves you cash'}
+
+@user.route('/login')
+def login():
+    return {"message" : 'login details'}
